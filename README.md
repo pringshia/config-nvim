@@ -18,8 +18,8 @@ git submodule add https://github.com/pringshia/config-nvim .config/nvim
 
 - LSP support; intellisense/completion, better go-to-def
   - tree-sitter? - **ADDED**
-    - add behind feature-flag
-- Master file navigation
+    - maybe move to behind feature-flag
+- Master file navigation gestures
   - Harpoon? - **ADDED**
   - Telescope? - **ADDED**
     - need to add ripgrep/fzf?
