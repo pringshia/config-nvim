@@ -19,9 +19,16 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
+
+  -- Themes
   use 'folke/tokyonight.nvim'
   use 'rebelot/kanagawa.nvim'
+
+  -- LSP
   use 'nvim-treesitter/nvim-treesitter'
+
+  use 'nvim-lua/plenary.nvim'
+  use 'ThePrimeagen/harpoon'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
