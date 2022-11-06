@@ -25,10 +25,14 @@ return require('packer').startup(function(use)
   use 'rebelot/kanagawa.nvim'
 
   -- LSP
-  use 'nvim-treesitter/nvim-treesitter'
+  use { 'nvim-treesitter/nvim-treesitter', cond = "true" }
 
+  -- Other
   use 'nvim-lua/plenary.nvim'
   use 'ThePrimeagen/harpoon'
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.0'
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
