@@ -25,7 +25,7 @@ return require('packer').startup(function(use)
   use 'rebelot/kanagawa.nvim'
 
   -- LSP
-  use { 'nvim-treesitter/nvim-treesitter', cond = "true" }
+  use { 'nvim-treesitter/nvim-treesitter', cond = os.getenv("NVP_SKIP_DEV") == nil }
 
   -- Other
   use 'nvim-lua/plenary.nvim'
