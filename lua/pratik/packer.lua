@@ -28,12 +28,32 @@ return require('packer').startup(function(use)
   -- LSP
   use { 'nvim-treesitter/nvim-treesitter', cond = os.getenv("NVP_SKIP_DEV") == nil }
 
+  
   -- Other
   use 'nvim-lua/plenary.nvim'
   use 'ThePrimeagen/harpoon'
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0'
   }
+  use 'tpope/vim-surround'
+  -- use 'tpope/vim-sensible'
+    -- TODO: Decide if I really need this? Maybe, it's tpope
+    -- Explaining Every Line of vim-sensible: http://webcache.googleusercontent.com/search?q=cache:tH-DlPzZ4GAJ:https://towardsdatascience.com/explaining-every-line-of-vim-sensible-b776affec51a&hl=en&gl=us&strip=1&vwsrc=0
+
+  -- use 'easymotion/vim-easymotion'
+    -- TODO: Decide to what capacity I should use this
+    -- The project readme says be a "true vimmer" and customize this
+    -- My worry is that I will become overly reliant on using this to navigate
+    -- files.
+
+  -- use 'mg979/vim-visual-multi'
+    -- TODO: Experiment with this
+
+
+  -- Shortlist:
+  -- junegunn/vim-easy-align (seems super niche usage tho)
+  -- sbdchd/neoformat (or maybe just vim-prettier)
+  -- tpope/commentary (how does it really work with my usecases?)
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
