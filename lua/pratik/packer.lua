@@ -23,6 +23,7 @@ return require('packer').startup(function(use)
   -- Themes
   use 'folke/tokyonight.nvim'
   use 'rebelot/kanagawa.nvim'
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- LSP
   use { 'nvim-treesitter/nvim-treesitter', cond = os.getenv("NVP_SKIP_DEV") == nil }

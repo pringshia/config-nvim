@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  catppuccin = {
+    loaded = true,
+    path = "/Users/tiki/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/Users/tiki/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -85,7 +90,7 @@ _G.packer_plugins = {
     url = "https://github.com/rebelot/kanagawa.nvim"
   },
   ["nvim-treesitter"] = {
-    cond = { "return true" },
+    cond = { true },
     loaded = false,
     needs_bufread = false,
     only_cond = true,
