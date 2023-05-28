@@ -116,6 +116,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/tiki/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["vim-easymotion"] = {
+    loaded = true,
+    path = "/Users/tiki/.local/share/nvim/site/pack/packer/start/vim-easymotion",
+    url = "https://github.com/easymotion/vim-easymotion"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/Users/tiki/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   }
 }
 

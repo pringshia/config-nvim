@@ -40,7 +40,7 @@ return require('packer').startup(function(use)
     -- TODO: Decide if I really need this? Maybe, it's tpope
     -- Explaining Every Line of vim-sensible: http://webcache.googleusercontent.com/search?q=cache:tH-DlPzZ4GAJ:https://towardsdatascience.com/explaining-every-line-of-vim-sensible-b776affec51a&hl=en&gl=us&strip=1&vwsrc=0
 
-  -- use 'easymotion/vim-easymotion'
+  use 'easymotion/vim-easymotion'
     -- TODO: Decide to what capacity I should use this
     -- The project readme says be a "true vimmer" and customize this
     -- My worry is that I will become overly reliant on using this to navigate
